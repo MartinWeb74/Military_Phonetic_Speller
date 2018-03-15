@@ -22,7 +22,7 @@ def process_text(text):
     traslation = ""
     for i in text:
         try:
-            traslation += alpha[i] + " "
+            traslation += alpha[i.lower()] + " "
         except:
             traslation += i + " "
     return traslation
